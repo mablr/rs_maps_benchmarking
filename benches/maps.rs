@@ -8,7 +8,7 @@ use std::sync::Arc;
 use tokio::runtime::Runtime;
 use tokio::sync::Mutex as TokioMutex;
 
-const N: usize = 10_000; // Number of ops per benchmark
+const N: usize = 1_000_000; // Number of ops per benchmark
 
 fn bench_maps(c: &mut Criterion) {
     let mut group = c.benchmark_group("maps");
